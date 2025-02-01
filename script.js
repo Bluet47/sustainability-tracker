@@ -1,15 +1,16 @@
-function calculateCO2Emissions() {
-    const distance = document.getElementById('distance').value;
+// Function to calculate CO2 emissions
+function calculateCO2(distance) {
     const co2PerMile = 0.115; // CO2 in kg per mile
 
-    if (!distance || distance <= 0) {
-        alert("Please enter a valid distance.");
-        return;
+    if (!distance || distance <= 0 || isNaN(distance)) {
+        throw new Error("Invalid distance. Please enter a positive number.");
     }
 
-    const co2Emissions = distance * co2PerMile;
-    
-    // Display result
-    document.getElementById('result').style.display = 'block';
-    document.getElementById('co2Amount').innerText = co2Emissions.toFixed(2);
+    return (distance * co2PerMile).toFixed(2); // Return as string with 2 decimal places
 }
+
+// Export function for testing
+if (typeof module !== "undefined" && module.exports) {
+    module.exports = { calculateCO2 };
+}
+

@@ -47,6 +47,6 @@ function compareTransportCO2(distance) {
 }
 
 // Export functions for testing
-module.exports = { calculateCO2Emissions, compareTransportCO2, calculateTreesNeeded };
+module.exports = { calculateCO2Emissions };
 
 

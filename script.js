@@ -46,9 +46,7 @@ function compareTransportCO2(distance) {
     };
 }
 
-function calculateTreesNeeded(co2Emission) {
-    const co2PerTreePerYear = 22; // Average kg of CO2 absorbed per tree per year
-    return Math.ceil(co2Emission / co2PerTreePerYear);
-}
+// Export functions for testing
+module.exports = { calculateCO2Emissions, compareTransportCO2, calculateTreesNeeded };
 
 

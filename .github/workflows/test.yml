@@ -7,6 +7,8 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'tests/**'
   pull_request:
     branches:
       - main
@@ -29,3 +31,4 @@ jobs:
 
       - name: Run tests
         run: npm test
+

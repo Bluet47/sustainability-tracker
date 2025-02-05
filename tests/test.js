@@ -1,4 +1,4 @@
-const { calculateCO2 } = require('./script.js'); // Import function for testing
+const { calculateCO2 } = require('../script.js');// Import function for testing
 
 describe("CO2 Emissions Calculator", () => {
 

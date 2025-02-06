@@ -1,6 +1,4 @@
 // Function to calculate CO2 emissions
-// Function to calculate CO2 emissions
-// Function to calculate CO2 emissions
 function calculateCO2(distance) {
     const co2PerMile = 0.115; // CO2 in kg per mile
 

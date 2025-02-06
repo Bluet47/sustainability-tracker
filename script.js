@@ -11,23 +11,23 @@ function calculateCO2(distance) {
 
 //adding event listeners to make calculate button interactive in the browser while being hosted externally 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.querySelector("button");
-    const resultDiv = document.getElementById("result");
-    const co2Amount = document.getElementById("co2Amount");
+//document.addEventListener("DOMContentLoaded", function () {
+//    const button = document.querySelector("button");
+//    const resultDiv = document.getElementById("result");
+//    const co2Amount = document.getElementById("co2Amount");
 
-    button.addEventListener("click", function () {
-        const distance = parseFloat(document.getElementById("distance").value);
+//    button.addEventListener("click", function () {
+//        const distance = parseFloat(document.getElementById("distance").value);
 
-        try {
-            const co2 = calculateCO2(distance);
-            co2Amount.textContent = `${co2} kg`;
-            resultDiv.style.display = "block";
-        } catch (error) {
-            alert(error.message);
-        }
-    });
-});
+//        try {
+//           const co2 = calculateCO2(distance);
+//            co2Amount.textContent = `${co2} kg`;
+//            resultDiv.style.display = "block";
+//        } catch (error) {
+//            alert(error.message);
+//        }
+//    });
+//});
 
 
 // Export function for Jest testing

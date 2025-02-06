@@ -18,7 +18,7 @@ function calculateCO2() {
 }
 
 // Ensure the function is available globally
-window.calculateCO2 = calculateCO2;
+//window.calculateCO2 = calculateCO2;
 
 
 // Export function for testing

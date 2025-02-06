@@ -10,10 +10,11 @@ function calculateCO2(distance) {
 }
 
 // Export function for Jest testing
-if (typeof module !== "undefined" && module.exports) {
-    module.exports = { calculateCO2 };
-}
+//if (typeof module !== "undefined" && module.exports) {
+//    module.exports = { calculateCO2 };
+//}
 
+module.exports = { calculateCO2 };
 
 
 // Ensure the function is available globally
